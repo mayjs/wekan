@@ -48,5 +48,13 @@ Meteor.startup(() => {
     Authentication.checkAdminOrCondition(userId, normalAccess);
   };
 
+  Authentication.checkBoardWriteAccess = function(userId, boardId) {
+    Authentication.checkLoggedIn(userId);
+
+    const board = Boards.findOne({_id: boardId});
+    const normalAccess = board.members.some((e) => e.userId === userId && !e.isCommentOnly);
+    Authentication.checkAdminOrCondition(userId, normalAccess);
+  };
+
 });
 
