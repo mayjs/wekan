@@ -1,3 +1,85 @@
+# Upcoming Wekan release
+
+This release adds the following new features:
+
+* [REST API: Add PUT method to update a card](https://github.com/wekan/wekan/pull/1095) and
+  [related fix](https://github.com/wekan/wekan/pull/1097);
+* [When finished input of checklist item, open new checklist
+  item](https://github.com/wekan/wekan/pull/1099);
+* [Improve UI design of checklist items](https://github.com/wekan/wekan/pull/1108);
+* [Import Wekan board](https://github.com/wekan/wekan/pull/1117);
+* [Outgoing Webhooks](https://github.com/wekan/wekan/pull/1119).
+
+and fixes the following bugs:
+
+* [Possible to add empty item to checklist](https://github.com/wekan/wekan/pull/1107);
+* [Double-slash issue](https://github.com/wekan/wekan/pull/1114).
+
+Thanks to GitHub users GhassenRjab, jtickle, nztqa and zarnifoulette for their contributions.
+
+# v0.27 2017-06-28 Wekan release
+
+This release adds the following new features:
+
+* [Snapcraft build support from source](https://github.com/wekan/wekan/pull/1091).
+
+and fixes the following bugs:
+
+* [Fix incorrect attachment link with subfolder in the url](https://github.com/wekan/wekan/pull/1086);
+* [Fix link to card](https://github.com/wekan/wekan/pull/1087);
+* [Fix duplicate id generation](https://github.com/wekan/wekan/pull/1093).
+
+Thanks to GitHub users kubiko and nztqa for their contributions.
+
+# v0.26 2017-06-26 Wekan release
+
+This release fixes the following bugs:
+
+* [Fix admin panel route for subfolder](https://github.com/wekan/wekan/pull/1084);
+* [Fix i18n route for subfolder](https://github.com/wekan/wekan/pull/1085).
+
+Thanks to GitHub user nztqa for contributions.
+
+# v0.25 2017-06-24 Wekan release
+
+This release adds the following new features:
+
+* [Import due date from Trello](https://github.com/wekan/wekan/pull/1082).
+
+and fixes the following bugs:
+
+* [Fix importing Trello board: Attribute correct members to their
+   comments](https://github.com/wekan/wekan/pull/1080);
+* [Fix Case-sensitive email handling](https://github.com/wekan/wekan/issues/675);
+* [Use fibers 1.0.15 because 2.0.0 is broken](https://github.com/wekan/wekan/commit/86e2744c24149c0eacf725b68a186d0bcfae5100);
+* [Remove git submodules, so that git clone of Wekan repo works now on Windows](https://github.com/wekan/wekan/issues/977).
+
+Thanks to GitHub users GhassenRjab, nztqa and xet7 for their contributions.
+
+# v0.24 2017-06-21 Wekan release
+
+This release adds the following new features:
+
+* [Change the way to delete a list (card-like)](https://github.com/wekan/wekan/pull/1050), fixes
+  [missing undo button](https://github.com/wekan/wekan/issues/1023);
+* [When deleting list, delete list's cards too](https://github.com/wekan/wekan/pull/1054);
+* [Re-enable Export Wekan Board](https://github.com/wekan/wekan/pull/1059);
+* [Sort languages by their translated names](https://github.com/wekan/wekan/pull/1070);
+* [Add Breton language name](https://github.com/wekan/wekan/pull/1071).
+
+and fixes the following bugs:
+
+* [Fix Admin Panel link available to all users, only link is hidden](https://github.com/wekan/wekan/pull/1076);
+* [Fix IE 11 drag board to scroll](https://github.com/wekan/wekan/pull/1052);
+* [Fix Export Wekan board](https://github.com/wekan/wekan/pull/1067);
+* [Fix "W" shortcut binding](https://github.com/wekan/wekan/pull/1066);
+* [Fix login url in invitation email](https://github.com/wekan/wekan/issues/993);
+* [Edit card description with invalid markdown](https://github.com/wekan/wekan/pull/1073);
+* [Fix filter reset on moving between starred boards](https://github.com/wekan/wekan/pull/1074).
+
+Thanks to GitHub users BaobabCoder, GhassenRjab, nebulade, nztqa and xet7
+for their contributions.
+
 # v0.23 2017-05-21 Wekan release
 
 This release adds the following new features:
@@ -114,7 +196,7 @@ and fixes the following bugs:
   requests need further review before merging into devel;
 * Use navigator language by default instead of English.
 
-Thanks to GitHub users JamborJan, lkisme, rhelsing, Serubi, stephenmoloney,
+Thanks to GitHub users JamborJan, lkisme, rhelsing, Serubin, stephenmoloney,
 umbertooo and Zokormazo for their contributions.
 
 # v0.17 2017-03-25 Wekan release
