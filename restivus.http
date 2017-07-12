@@ -1,0 +1,18 @@
+### Authorize, password is given via urlencoded post data
+POST http://localhost:3000/restivus/login
+content-type: application/x-www-form-urlencoded
+
+username=mayjs&password=123456
+
+### Post card
+POST http://localhost:3000/restivus/cards
+Content-Type: application/json
+X-Auth-Token: tr5UR9ZLjRt89GRZaK0mpQLuwnD8RNmn4N4UXUqhsea
+X-User-Id: Sv6JnMcEn6rsxBhGH
+
+{
+  "title": "test",
+  "listId": "Y23SR3cLytrLyzNSD",
+  "boardId": "f44ZwpL2uArWaLEYt",
+  "description": "testcard"
+}
